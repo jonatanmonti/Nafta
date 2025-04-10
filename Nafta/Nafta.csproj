@@ -34,7 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="AlphaBlendTextBox">
-      <HintPath>..\..\..\..\Downloads\AlphaBlendTextBox.dll</HintPath>
+      <HintPath>libs\AlphaBlendTextBox\AlphaBlendTextBox.dll</HintPath>
     </Reference>
     <Reference Include="Bunifu.Charts.WinForms, Version=1.0.5.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Bunifu.Charts.WinForms.1.0.2\lib\Bunifu.Charts.WinForms.dll</HintPath>
@@ -237,6 +237,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\lock-solid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
