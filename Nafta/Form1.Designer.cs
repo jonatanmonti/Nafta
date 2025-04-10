@@ -31,6 +31,8 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.bunifuGradientPanel1 = new Bunifu.UI.WinForms.BunifuGradientPanel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.LoginButton = new Bunifu.Framework.UI.BunifuThinButton2();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.bunifuPictureBox3 = new Bunifu.UI.WinForms.BunifuPictureBox();
@@ -43,8 +45,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.alphaBlendTextBox1 = new ZBobb.AlphaBlendTextBox();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.LoginButton = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.label4 = new System.Windows.Forms.Label();
             this.bunifuGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox2)).BeginInit();
@@ -79,6 +79,44 @@
             this.bunifuGradientPanel1.Quality = 10;
             this.bunifuGradientPanel1.Size = new System.Drawing.Size(450, 621);
             this.bunifuGradientPanel1.TabIndex = 0;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(183, 542);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(85, 23);
+            this.label4.TabIndex = 14;
+            this.label4.Text = "Register";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
+            // 
+            // LoginButton
+            // 
+            this.LoginButton.ActiveBorderThickness = 1;
+            this.LoginButton.ActiveCornerRadius = 37;
+            this.LoginButton.ActiveFillColor = System.Drawing.Color.Purple;
+            this.LoginButton.ActiveForecolor = System.Drawing.Color.White;
+            this.LoginButton.ActiveLineColor = System.Drawing.Color.Black;
+            this.LoginButton.BackColor = System.Drawing.Color.Transparent;
+            this.LoginButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("LoginButton.BackgroundImage")));
+            this.LoginButton.ButtonText = "Login";
+            this.LoginButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.LoginButton.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LoginButton.ForeColor = System.Drawing.Color.Black;
+            this.LoginButton.IdleBorderThickness = 1;
+            this.LoginButton.IdleCornerRadius = 37;
+            this.LoginButton.IdleFillColor = System.Drawing.Color.White;
+            this.LoginButton.IdleForecolor = System.Drawing.Color.Black;
+            this.LoginButton.IdleLineColor = System.Drawing.Color.Purple;
+            this.LoginButton.Location = new System.Drawing.Point(117, 465);
+            this.LoginButton.Margin = new System.Windows.Forms.Padding(5);
+            this.LoginButton.Name = "LoginButton";
+            this.LoginButton.Size = new System.Drawing.Size(216, 62);
+            this.LoginButton.TabIndex = 13;
+            this.LoginButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LoginButton.Click += new System.EventHandler(this.LoginButton_Click);
             // 
             // label3
             // 
@@ -261,44 +299,6 @@
             // 
             this.bunifuElipse1.ElipseRadius = 75;
             this.bunifuElipse1.TargetControl = this;
-            // 
-            // LoginButton
-            // 
-            this.LoginButton.ActiveBorderThickness = 1;
-            this.LoginButton.ActiveCornerRadius = 37;
-            this.LoginButton.ActiveFillColor = System.Drawing.Color.Purple;
-            this.LoginButton.ActiveForecolor = System.Drawing.Color.White;
-            this.LoginButton.ActiveLineColor = System.Drawing.Color.Black;
-            this.LoginButton.BackColor = System.Drawing.Color.Transparent;
-            this.LoginButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("LoginButton.BackgroundImage")));
-            this.LoginButton.ButtonText = "Login";
-            this.LoginButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.LoginButton.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LoginButton.ForeColor = System.Drawing.Color.Black;
-            this.LoginButton.IdleBorderThickness = 1;
-            this.LoginButton.IdleCornerRadius = 37;
-            this.LoginButton.IdleFillColor = System.Drawing.Color.White;
-            this.LoginButton.IdleForecolor = System.Drawing.Color.Black;
-            this.LoginButton.IdleLineColor = System.Drawing.Color.Purple;
-            this.LoginButton.Location = new System.Drawing.Point(117, 465);
-            this.LoginButton.Margin = new System.Windows.Forms.Padding(5);
-            this.LoginButton.Name = "LoginButton";
-            this.LoginButton.Size = new System.Drawing.Size(216, 62);
-            this.LoginButton.TabIndex = 13;
-            this.LoginButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.LoginButton.Click += new System.EventHandler(this.LoginButton_Click);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(183, 542);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(85, 23);
-            this.label4.TabIndex = 14;
-            this.label4.Text = "Register";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // Login
             // 

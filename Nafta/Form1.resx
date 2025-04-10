@@ -1974,7 +1974,7 @@
   <data name="bunifuPictureBox3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAtgAAALUCAYAAAAxEUV+AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EQAACxEBf2RfkQAA/7JJREFUeF7snQeYFEX6/7n7/S+fwLI5R5YkUSSIgHKYToyYcz5FPRNnOLOHgUMx
+        EAAACxABrSO9dQAA/7JJREFUeF7snQeYFEX6/7n7/S+fwLI5R5YkUSSIgHKYToyYcz5FPRNnOLOHgUMx
         oZ6KOYABswgiICogIkgUiQLLsjmzARTq/3xr5p3t+XbP9DTTG5l9ns8zsz01Haq7qz5d81ZVh/ydeR0i
         RAiFgoL8JqYgRDzpCwt3etnhRf5vmxQVFbQoxcWFrYrCEn+KS4scUVJeHJTSilIf+F++U1ZZpikvL9VU
         VpZrqqoqNDW7qjTVNZX6/4oKX9rflJQW/bagIP//7cjf/oefNv70l5VrVnZe9O3CuPkL5qV++PEHXd95
@@ -6607,6 +6607,6 @@
     <value>17, 17</value>
   </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>46</value>
+    <value>58</value>
   </metadata>
 </root>
