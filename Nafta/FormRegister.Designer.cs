@@ -32,6 +32,15 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormRegister));
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuGradientPanel1 = new Bunifu.UI.WinForms.BunifuGradientPanel();
+            this.bunifuPictureBox8 = new Bunifu.UI.WinForms.BunifuPictureBox();
+            this.bunifuPictureBox6 = new Bunifu.UI.WinForms.BunifuPictureBox();
+            this.bunifuPictureBox5 = new Bunifu.UI.WinForms.BunifuPictureBox();
+            this.bunifuPictureBox7 = new Bunifu.UI.WinForms.BunifuPictureBox();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.CellRegiterText = new ZBobb.AlphaBlendTextBox();
+            this.bunifuPictureBox4 = new Bunifu.UI.WinForms.BunifuPictureBox();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.RepeatRegiterText = new ZBobb.AlphaBlendTextBox();
             this.RegisterButton = new Bunifu.Framework.UI.BunifuThinButton2();
             this.label2 = new System.Windows.Forms.Label();
             this.bunifuPictureBox3 = new Bunifu.UI.WinForms.BunifuPictureBox();
@@ -41,24 +50,15 @@
             this.bunifuPictureBox1 = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.EmailRegisterText = new ZBobb.AlphaBlendTextBox();
-            this.bunifuPictureBox4 = new Bunifu.UI.WinForms.BunifuPictureBox();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.RepeatRegiterText = new ZBobb.AlphaBlendTextBox();
-            this.bunifuPictureBox5 = new Bunifu.UI.WinForms.BunifuPictureBox();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.CellRegiterText = new ZBobb.AlphaBlendTextBox();
-            this.bunifuPictureBox6 = new Bunifu.UI.WinForms.BunifuPictureBox();
-            this.bunifuPictureBox7 = new Bunifu.UI.WinForms.BunifuPictureBox();
-            this.bunifuPictureBox8 = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.bunifuGradientPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox8)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuElipse1
@@ -100,6 +100,140 @@
             this.bunifuGradientPanel1.Quality = 10;
             this.bunifuGradientPanel1.Size = new System.Drawing.Size(338, 505);
             this.bunifuGradientPanel1.TabIndex = 1;
+            // 
+            // bunifuPictureBox8
+            // 
+            this.bunifuPictureBox8.AllowFocused = false;
+            this.bunifuPictureBox8.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuPictureBox8.AutoSizeHeight = true;
+            this.bunifuPictureBox8.BorderRadius = 14;
+            this.bunifuPictureBox8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuPictureBox8.Image = global::Nafta.Properties.Resources.backward_solid;
+            this.bunifuPictureBox8.IsCircle = true;
+            this.bunifuPictureBox8.Location = new System.Drawing.Point(25, 19);
+            this.bunifuPictureBox8.Margin = new System.Windows.Forms.Padding(2);
+            this.bunifuPictureBox8.Name = "bunifuPictureBox8";
+            this.bunifuPictureBox8.Size = new System.Drawing.Size(28, 28);
+            this.bunifuPictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuPictureBox8.TabIndex = 21;
+            this.bunifuPictureBox8.TabStop = false;
+            this.bunifuPictureBox8.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
+            // 
+            // bunifuPictureBox6
+            // 
+            this.bunifuPictureBox6.AllowFocused = false;
+            this.bunifuPictureBox6.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuPictureBox6.AutoSizeHeight = true;
+            this.bunifuPictureBox6.BorderRadius = 14;
+            this.bunifuPictureBox6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuPictureBox6.Image = global::Nafta.Properties.Resources.minimize_solid;
+            this.bunifuPictureBox6.IsCircle = true;
+            this.bunifuPictureBox6.Location = new System.Drawing.Point(253, 19);
+            this.bunifuPictureBox6.Margin = new System.Windows.Forms.Padding(2);
+            this.bunifuPictureBox6.Name = "bunifuPictureBox6";
+            this.bunifuPictureBox6.Size = new System.Drawing.Size(28, 28);
+            this.bunifuPictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuPictureBox6.TabIndex = 18;
+            this.bunifuPictureBox6.TabStop = false;
+            this.bunifuPictureBox6.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
+            // 
+            // bunifuPictureBox5
+            // 
+            this.bunifuPictureBox5.AllowFocused = false;
+            this.bunifuPictureBox5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuPictureBox5.AutoSizeHeight = true;
+            this.bunifuPictureBox5.BorderRadius = 14;
+            this.bunifuPictureBox5.Image = global::Nafta.Properties.Resources.lock_solid;
+            this.bunifuPictureBox5.IsCircle = true;
+            this.bunifuPictureBox5.Location = new System.Drawing.Point(31, 327);
+            this.bunifuPictureBox5.Margin = new System.Windows.Forms.Padding(2);
+            this.bunifuPictureBox5.Name = "bunifuPictureBox5";
+            this.bunifuPictureBox5.Size = new System.Drawing.Size(28, 28);
+            this.bunifuPictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuPictureBox5.TabIndex = 20;
+            this.bunifuPictureBox5.TabStop = false;
+            this.bunifuPictureBox5.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
+            // 
+            // bunifuPictureBox7
+            // 
+            this.bunifuPictureBox7.AllowFocused = false;
+            this.bunifuPictureBox7.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuPictureBox7.AutoSizeHeight = true;
+            this.bunifuPictureBox7.BorderRadius = 14;
+            this.bunifuPictureBox7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuPictureBox7.Image = global::Nafta.Properties.Resources.circle_xmark_regular;
+            this.bunifuPictureBox7.IsCircle = true;
+            this.bunifuPictureBox7.Location = new System.Drawing.Point(285, 19);
+            this.bunifuPictureBox7.Margin = new System.Windows.Forms.Padding(2);
+            this.bunifuPictureBox7.Name = "bunifuPictureBox7";
+            this.bunifuPictureBox7.Size = new System.Drawing.Size(28, 28);
+            this.bunifuPictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuPictureBox7.TabIndex = 17;
+            this.bunifuPictureBox7.TabStop = false;
+            this.bunifuPictureBox7.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.White;
+            this.panel4.Location = new System.Drawing.Point(25, 360);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(289, 2);
+            this.panel4.TabIndex = 19;
+            // 
+            // CellRegiterText
+            // 
+            this.CellRegiterText.BackAlpha = 0;
+            this.CellRegiterText.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.CellRegiterText.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.CellRegiterText.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CellRegiterText.ForeColor = System.Drawing.Color.White;
+            this.CellRegiterText.Location = new System.Drawing.Point(63, 335);
+            this.CellRegiterText.Margin = new System.Windows.Forms.Padding(2);
+            this.CellRegiterText.Name = "CellRegiterText";
+            this.CellRegiterText.Size = new System.Drawing.Size(250, 20);
+            this.CellRegiterText.TabIndex = 18;
+            this.CellRegiterText.Text = "Phone:";
+            // 
+            // bunifuPictureBox4
+            // 
+            this.bunifuPictureBox4.AllowFocused = false;
+            this.bunifuPictureBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuPictureBox4.AutoSizeHeight = true;
+            this.bunifuPictureBox4.BorderRadius = 14;
+            this.bunifuPictureBox4.Image = global::Nafta.Properties.Resources.lock_solid;
+            this.bunifuPictureBox4.IsCircle = true;
+            this.bunifuPictureBox4.Location = new System.Drawing.Point(31, 272);
+            this.bunifuPictureBox4.Margin = new System.Windows.Forms.Padding(2);
+            this.bunifuPictureBox4.Name = "bunifuPictureBox4";
+            this.bunifuPictureBox4.Size = new System.Drawing.Size(28, 28);
+            this.bunifuPictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuPictureBox4.TabIndex = 17;
+            this.bunifuPictureBox4.TabStop = false;
+            this.bunifuPictureBox4.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.Location = new System.Drawing.Point(25, 305);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(289, 2);
+            this.panel3.TabIndex = 16;
+            // 
+            // RepeatRegiterText
+            // 
+            this.RepeatRegiterText.BackAlpha = 0;
+            this.RepeatRegiterText.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.RepeatRegiterText.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.RepeatRegiterText.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RepeatRegiterText.ForeColor = System.Drawing.Color.White;
+            this.RepeatRegiterText.Location = new System.Drawing.Point(63, 280);
+            this.RepeatRegiterText.Margin = new System.Windows.Forms.Padding(2);
+            this.RepeatRegiterText.Name = "RepeatRegiterText";
+            this.RepeatRegiterText.Size = new System.Drawing.Size(250, 20);
+            this.RepeatRegiterText.TabIndex = 15;
+            this.RepeatRegiterText.Text = "Repeat Password:";
             // 
             // RegisterButton
             // 
@@ -235,140 +369,6 @@
             this.EmailRegisterText.TabIndex = 0;
             this.EmailRegisterText.Text = "Email:";
             // 
-            // bunifuPictureBox4
-            // 
-            this.bunifuPictureBox4.AllowFocused = false;
-            this.bunifuPictureBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bunifuPictureBox4.AutoSizeHeight = true;
-            this.bunifuPictureBox4.BorderRadius = 14;
-            this.bunifuPictureBox4.Image = global::Nafta.Properties.Resources.lock_solid;
-            this.bunifuPictureBox4.IsCircle = true;
-            this.bunifuPictureBox4.Location = new System.Drawing.Point(31, 272);
-            this.bunifuPictureBox4.Margin = new System.Windows.Forms.Padding(2);
-            this.bunifuPictureBox4.Name = "bunifuPictureBox4";
-            this.bunifuPictureBox4.Size = new System.Drawing.Size(28, 28);
-            this.bunifuPictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuPictureBox4.TabIndex = 17;
-            this.bunifuPictureBox4.TabStop = false;
-            this.bunifuPictureBox4.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Location = new System.Drawing.Point(25, 305);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(289, 2);
-            this.panel3.TabIndex = 16;
-            // 
-            // RepeatRegiterText
-            // 
-            this.RepeatRegiterText.BackAlpha = 0;
-            this.RepeatRegiterText.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.RepeatRegiterText.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.RepeatRegiterText.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RepeatRegiterText.ForeColor = System.Drawing.Color.White;
-            this.RepeatRegiterText.Location = new System.Drawing.Point(63, 280);
-            this.RepeatRegiterText.Margin = new System.Windows.Forms.Padding(2);
-            this.RepeatRegiterText.Name = "RepeatRegiterText";
-            this.RepeatRegiterText.Size = new System.Drawing.Size(250, 20);
-            this.RepeatRegiterText.TabIndex = 15;
-            this.RepeatRegiterText.Text = "Repeat Password:";
-            // 
-            // bunifuPictureBox5
-            // 
-            this.bunifuPictureBox5.AllowFocused = false;
-            this.bunifuPictureBox5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bunifuPictureBox5.AutoSizeHeight = true;
-            this.bunifuPictureBox5.BorderRadius = 14;
-            this.bunifuPictureBox5.Image = global::Nafta.Properties.Resources.lock_solid;
-            this.bunifuPictureBox5.IsCircle = true;
-            this.bunifuPictureBox5.Location = new System.Drawing.Point(31, 327);
-            this.bunifuPictureBox5.Margin = new System.Windows.Forms.Padding(2);
-            this.bunifuPictureBox5.Name = "bunifuPictureBox5";
-            this.bunifuPictureBox5.Size = new System.Drawing.Size(28, 28);
-            this.bunifuPictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuPictureBox5.TabIndex = 20;
-            this.bunifuPictureBox5.TabStop = false;
-            this.bunifuPictureBox5.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.White;
-            this.panel4.Location = new System.Drawing.Point(25, 360);
-            this.panel4.Margin = new System.Windows.Forms.Padding(2);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(289, 2);
-            this.panel4.TabIndex = 19;
-            // 
-            // CellRegiterText
-            // 
-            this.CellRegiterText.BackAlpha = 0;
-            this.CellRegiterText.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.CellRegiterText.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.CellRegiterText.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CellRegiterText.ForeColor = System.Drawing.Color.White;
-            this.CellRegiterText.Location = new System.Drawing.Point(63, 335);
-            this.CellRegiterText.Margin = new System.Windows.Forms.Padding(2);
-            this.CellRegiterText.Name = "CellRegiterText";
-            this.CellRegiterText.Size = new System.Drawing.Size(250, 20);
-            this.CellRegiterText.TabIndex = 18;
-            this.CellRegiterText.Text = "Phone:";
-            // 
-            // bunifuPictureBox6
-            // 
-            this.bunifuPictureBox6.AllowFocused = false;
-            this.bunifuPictureBox6.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bunifuPictureBox6.AutoSizeHeight = true;
-            this.bunifuPictureBox6.BorderRadius = 14;
-            this.bunifuPictureBox6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuPictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("bunifuPictureBox6.Image")));
-            this.bunifuPictureBox6.IsCircle = true;
-            this.bunifuPictureBox6.Location = new System.Drawing.Point(253, 19);
-            this.bunifuPictureBox6.Margin = new System.Windows.Forms.Padding(2);
-            this.bunifuPictureBox6.Name = "bunifuPictureBox6";
-            this.bunifuPictureBox6.Size = new System.Drawing.Size(28, 28);
-            this.bunifuPictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuPictureBox6.TabIndex = 18;
-            this.bunifuPictureBox6.TabStop = false;
-            this.bunifuPictureBox6.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
-            // 
-            // bunifuPictureBox7
-            // 
-            this.bunifuPictureBox7.AllowFocused = false;
-            this.bunifuPictureBox7.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bunifuPictureBox7.AutoSizeHeight = true;
-            this.bunifuPictureBox7.BorderRadius = 14;
-            this.bunifuPictureBox7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuPictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("bunifuPictureBox7.Image")));
-            this.bunifuPictureBox7.IsCircle = true;
-            this.bunifuPictureBox7.Location = new System.Drawing.Point(285, 19);
-            this.bunifuPictureBox7.Margin = new System.Windows.Forms.Padding(2);
-            this.bunifuPictureBox7.Name = "bunifuPictureBox7";
-            this.bunifuPictureBox7.Size = new System.Drawing.Size(28, 28);
-            this.bunifuPictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuPictureBox7.TabIndex = 17;
-            this.bunifuPictureBox7.TabStop = false;
-            this.bunifuPictureBox7.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
-            // 
-            // bunifuPictureBox8
-            // 
-            this.bunifuPictureBox8.AllowFocused = false;
-            this.bunifuPictureBox8.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bunifuPictureBox8.AutoSizeHeight = true;
-            this.bunifuPictureBox8.BorderRadius = 14;
-            this.bunifuPictureBox8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuPictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("bunifuPictureBox8.Image")));
-            this.bunifuPictureBox8.IsCircle = true;
-            this.bunifuPictureBox8.Location = new System.Drawing.Point(25, 19);
-            this.bunifuPictureBox8.Margin = new System.Windows.Forms.Padding(2);
-            this.bunifuPictureBox8.Name = "bunifuPictureBox8";
-            this.bunifuPictureBox8.Size = new System.Drawing.Size(28, 28);
-            this.bunifuPictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuPictureBox8.TabIndex = 21;
-            this.bunifuPictureBox8.TabStop = false;
-            this.bunifuPictureBox8.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
-            // 
             // FormRegister
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -381,14 +381,14 @@
             this.Text = "FormRegister";
             this.bunifuGradientPanel1.ResumeLayout(false);
             this.bunifuGradientPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox8)).EndInit();
             this.ResumeLayout(false);
 
         }

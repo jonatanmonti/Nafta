@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ForgotPasswordForm));
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.bunifuGradientPanel1 = new Bunifu.UI.WinForms.BunifuGradientPanel();
             this.bunifuPictureBox8 = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.bunifuPictureBox6 = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.bunifuPictureBox7 = new Bunifu.UI.WinForms.BunifuPictureBox();
@@ -40,19 +41,44 @@
             this.bunifuPictureBox1 = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.EmailRegisterText = new ZBobb.AlphaBlendTextBox();
-            this.bunifuGradientPanel1 = new Bunifu.UI.WinForms.BunifuGradientPanel();
+            this.bunifuGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
-            this.bunifuGradientPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // bunifuElipse1
             // 
             this.bunifuElipse1.ElipseRadius = 75;
             this.bunifuElipse1.TargetControl = this;
+            // 
+            // bunifuGradientPanel1
+            // 
+            this.bunifuGradientPanel1.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
+            this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuGradientPanel1.BorderRadius = 1;
+            this.bunifuGradientPanel1.Controls.Add(this.bunifuPictureBox8);
+            this.bunifuGradientPanel1.Controls.Add(this.bunifuPictureBox6);
+            this.bunifuGradientPanel1.Controls.Add(this.bunifuPictureBox7);
+            this.bunifuGradientPanel1.Controls.Add(this.SendButton);
+            this.bunifuGradientPanel1.Controls.Add(this.labelForgot);
+            this.bunifuGradientPanel1.Controls.Add(this.bunifuPictureBox3);
+            this.bunifuGradientPanel1.Controls.Add(this.bunifuPictureBox1);
+            this.bunifuGradientPanel1.Controls.Add(this.panel1);
+            this.bunifuGradientPanel1.Controls.Add(this.EmailRegisterText);
+            this.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.Black;
+            this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.DeepPink;
+            this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.DarkBlue;
+            this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.Black;
+            this.bunifuGradientPanel1.Location = new System.Drawing.Point(-5, -2);
+            this.bunifuGradientPanel1.Margin = new System.Windows.Forms.Padding(2);
+            this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
+            this.bunifuGradientPanel1.Quality = 10;
+            this.bunifuGradientPanel1.Size = new System.Drawing.Size(338, 505);
+            this.bunifuGradientPanel1.TabIndex = 2;
             // 
             // bunifuPictureBox8
             // 
@@ -61,7 +87,7 @@
             this.bunifuPictureBox8.AutoSizeHeight = true;
             this.bunifuPictureBox8.BorderRadius = 14;
             this.bunifuPictureBox8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuPictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("bunifuPictureBox8.Image")));
+            this.bunifuPictureBox8.Image = global::Nafta.Properties.Resources.backward_solid;
             this.bunifuPictureBox8.IsCircle = true;
             this.bunifuPictureBox8.Location = new System.Drawing.Point(25, 19);
             this.bunifuPictureBox8.Margin = new System.Windows.Forms.Padding(2);
@@ -79,7 +105,7 @@
             this.bunifuPictureBox6.AutoSizeHeight = true;
             this.bunifuPictureBox6.BorderRadius = 14;
             this.bunifuPictureBox6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuPictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("bunifuPictureBox6.Image")));
+            this.bunifuPictureBox6.Image = global::Nafta.Properties.Resources.minimize_solid;
             this.bunifuPictureBox6.IsCircle = true;
             this.bunifuPictureBox6.Location = new System.Drawing.Point(253, 19);
             this.bunifuPictureBox6.Margin = new System.Windows.Forms.Padding(2);
@@ -97,7 +123,7 @@
             this.bunifuPictureBox7.AutoSizeHeight = true;
             this.bunifuPictureBox7.BorderRadius = 14;
             this.bunifuPictureBox7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuPictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("bunifuPictureBox7.Image")));
+            this.bunifuPictureBox7.Image = global::Nafta.Properties.Resources.circle_xmark_regular;
             this.bunifuPictureBox7.IsCircle = true;
             this.bunifuPictureBox7.Location = new System.Drawing.Point(285, 19);
             this.bunifuPictureBox7.Margin = new System.Windows.Forms.Padding(2);
@@ -202,32 +228,6 @@
             this.EmailRegisterText.TabIndex = 0;
             this.EmailRegisterText.Text = "Email:";
             // 
-            // bunifuGradientPanel1
-            // 
-            this.bunifuGradientPanel1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
-            this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuGradientPanel1.BorderRadius = 1;
-            this.bunifuGradientPanel1.Controls.Add(this.bunifuPictureBox8);
-            this.bunifuGradientPanel1.Controls.Add(this.bunifuPictureBox6);
-            this.bunifuGradientPanel1.Controls.Add(this.bunifuPictureBox7);
-            this.bunifuGradientPanel1.Controls.Add(this.SendButton);
-            this.bunifuGradientPanel1.Controls.Add(this.labelForgot);
-            this.bunifuGradientPanel1.Controls.Add(this.bunifuPictureBox3);
-            this.bunifuGradientPanel1.Controls.Add(this.bunifuPictureBox1);
-            this.bunifuGradientPanel1.Controls.Add(this.panel1);
-            this.bunifuGradientPanel1.Controls.Add(this.EmailRegisterText);
-            this.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.Black;
-            this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.DeepPink;
-            this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.DarkBlue;
-            this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.Black;
-            this.bunifuGradientPanel1.Location = new System.Drawing.Point(-5, -2);
-            this.bunifuGradientPanel1.Margin = new System.Windows.Forms.Padding(2);
-            this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
-            this.bunifuGradientPanel1.Quality = 10;
-            this.bunifuGradientPanel1.Size = new System.Drawing.Size(338, 505);
-            this.bunifuGradientPanel1.TabIndex = 2;
-            // 
             // ForgotPasswordForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -238,13 +238,13 @@
             this.Name = "ForgotPasswordForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ForgotPasswordForm";
+            this.bunifuGradientPanel1.ResumeLayout(false);
+            this.bunifuGradientPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).EndInit();
-            this.bunifuGradientPanel1.ResumeLayout(false);
-            this.bunifuGradientPanel1.PerformLayout();
             this.ResumeLayout(false);
 
         }

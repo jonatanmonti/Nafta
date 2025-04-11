@@ -12,6 +12,7 @@ namespace Nafta
 {
     public partial class Login : Form
     {
+        private bool EmailClick = false;
         public Login()
         {
             InitializeComponent();

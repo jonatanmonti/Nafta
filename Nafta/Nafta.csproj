@@ -259,5 +259,14 @@
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circle-xmark-regular.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize-solid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backward-solid.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

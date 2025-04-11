@@ -63,9 +63,39 @@ namespace Nafta.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap backward_solid {
+            get {
+                object obj = ResourceManager.GetObject("backward-solid", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap circle_xmark_regular {
+            get {
+                object obj = ResourceManager.GetObject("circle-xmark-regular", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap lock_solid {
             get {
                 object obj = ResourceManager.GetObject("lock-solid", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap minimize_solid {
+            get {
+                object obj = ResourceManager.GetObject("minimize-solid", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
