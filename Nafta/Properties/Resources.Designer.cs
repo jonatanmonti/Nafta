@@ -103,6 +103,16 @@ namespace Nafta.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap phone_solid {
+            get {
+                object obj = ResourceManager.GetObject("phone-solid", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap user_solid {
             get {
                 object obj = ResourceManager.GetObject("user-solid", resourceCulture);
