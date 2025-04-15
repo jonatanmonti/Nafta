@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormRegisterCode));
             this.bunifuGradientPanel1 = new Bunifu.UI.WinForms.BunifuGradientPanel();
             this.labelCode = new System.Windows.Forms.Label();
@@ -37,6 +38,7 @@
             this.bunifuPictureBox3 = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.CodeRegisterText = new ZBobb.AlphaBlendTextBox();
+            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MiniApp)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CloseApp)).BeginInit();
@@ -179,6 +181,11 @@
             this.CodeRegisterText.TabIndex = 0;
             this.CodeRegisterText.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // bunifuElipse1
+            // 
+            this.bunifuElipse1.ElipseRadius = 75;
+            this.bunifuElipse1.TargetControl = this;
+            // 
             // FormRegisterCode
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -208,5 +215,6 @@
         private System.Windows.Forms.Panel panel1;
         private ZBobb.AlphaBlendTextBox CodeRegisterText;
         private System.Windows.Forms.Label labelCode;
+        private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
     }
 }
