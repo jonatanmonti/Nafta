@@ -96,5 +96,42 @@ namespace BLL.Services
                 return true;
             }
         }
+
+        public bool LoginUser(string email, string plainPassword, out string message)
+        {
+            using (var context = new NaftaDbContext())
+            {
+                var user = context.Users.FirstOrDefault(u => u.Email == email);
+
+                if (user == null)
+                {
+                    message = "Usuario no encontrado.";
+                    return false;
+                }
+
+                string hashedInput = Hasher.Hash(plainPassword);
+
+                if (user.PasswordHash != hashedInput)
+                {
+                    message = "Contraseña incorrecta.";
+                    return false;
+                }
+
+                var verif = context.EmailVerifications
+                    .Where(v => v.Email == email)
+                    .OrderByDescending(v => v.CreatedAt)
+                    .FirstOrDefault();
+
+                if (verif != null && !verif.IsVerified)
+                {
+                    message = "Este correo no ha sido verificado aún.";
+                    return false;
+                }
+
+                message = "Inicio de sesión exitoso.";
+                return true;
+            }
+        }
+
     }
 }

@@ -52,7 +52,26 @@ namespace Nafta
 
         private void LoginButton_Click(object sender, EventArgs e)
         {
+            var userService = new UserService();
 
+            bool success = userService.LoginUser(
+                EmailLoginText.Text.Trim(),
+                PasswordLoginText.Text,
+                out string resultMessage
+            );
+
+            MessageBox.Show(resultMessage);
+
+            if (success)
+            {
+                var homeForm = new Home
+                {
+                    Owner = this
+                };
+
+                homeForm.Show();
+                this.Hide();
+            }
         }
 
         private void labelRegister_Click(object sender, EventArgs e)
