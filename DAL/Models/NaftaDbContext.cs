@@ -10,7 +10,7 @@ namespace DAL.Models
 {
     public class NaftaDbContext : DbContext
     {
-        public NaftaDbContext() : base("Server=DESKTOP-MUCUS81\\SQLEXPRESS01;Database=Nafta;Integrated Security=True;TrustServerCertificate=True") { }
+        public NaftaDbContext() : base("Server=JONI\\SQLEXPRESS;Database=Nafta;Integrated Security=True;TrustServerCertificate=True") { }
 
         public DbSet<User> Users { get; set; }
         public DbSet<EmailVerification> EmailVerifications { get; set; }

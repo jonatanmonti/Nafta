@@ -55,6 +55,10 @@
     <Compile Include="Migrations\202504142058173_InitialCreate.Designer.cs">
       <DependentUpon>202504142058173_InitialCreate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202504150235185_AddEmailVerification.cs" />
+    <Compile Include="Migrations\202504150235185_AddEmailVerification.Designer.cs">
+      <DependentUpon>202504150235185_AddEmailVerification.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\EmailVerification.cs" />
     <Compile Include="Models\NaftaDbContext.cs" />
@@ -68,6 +72,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202504142058173_InitialCreate.resx">
       <DependentUpon>202504142058173_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202504150235185_AddEmailVerification.resx">
+      <DependentUpon>202504150235185_AddEmailVerification.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
