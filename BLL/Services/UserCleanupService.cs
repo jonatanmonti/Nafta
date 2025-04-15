@@ -14,18 +14,30 @@ namespace BLL.Services
             using (var context = new NaftaDbContext())
             {
                 DateTime threshold = DateTime.UtcNow - expirationTime;
+
                 var expired = context.EmailVerifications
                     .Where(v => !v.IsVerified && v.CreatedAt < threshold)
                     .ToList();
 
-                if (expired.Any())
+                int removed = 0;
+
+                foreach (var verif in expired)
                 {
-                    context.EmailVerifications.RemoveRange(expired);
-                    context.SaveChanges();
-                    return expired.Count;
+                    var user = context.Users.FirstOrDefault(u => u.Email == verif.Email);
+                    if (user != null)
+                    {
+                        context.Users.Remove(user);
+                    }
+                    context.EmailVerifications.Remove(verif);
+                    removed++;
                 }
 
-                return 0;
+                if (removed > 0)
+                {
+                    context.SaveChanges();
+                }
+
+                return removed;
             }
         }
     }

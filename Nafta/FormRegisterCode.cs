@@ -39,5 +39,15 @@ namespace Nafta
                 MessageBox.Show(msg);
             }
         }
+
+        private void CloseApp_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void MiniApp_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
     }
 }

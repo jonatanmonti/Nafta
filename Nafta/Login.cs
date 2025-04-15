@@ -39,7 +39,7 @@ namespace Nafta
         private void CleanupTimer_Tick(object sender, EventArgs e)
         {
             var cleanupService = new UserCleanupService();
-            int removed = cleanupService.DeleteUnverifiedUsers(TimeSpan.FromMinutes(10));
+            int removed = cleanupService.DeleteExpiredVerifications(TimeSpan.FromMinutes(2));
 
             if (removed > 0)
             {
