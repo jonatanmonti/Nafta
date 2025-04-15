@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Nafta.Models
+namespace DAL.Models
 {
     public class User
     {
@@ -37,6 +38,9 @@ namespace Nafta.Models
         [MaxLength(15, ErrorMessage = "The phone number cannot exceed 15 characters.")]
         [RegularExpression(@"^\+?[0-9]{7,15}$", ErrorMessage = "The phone number must be in a valid format.")]
         public string Phone { get; set; }
+
+        [NotMapped]
+        public string VerificationCode { get; set; }
 
         public DateTime CreatedDate { get; set; } = DateTime.UtcNow;
 

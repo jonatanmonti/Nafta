@@ -10,17 +10,43 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Nafta.Navigation;
 using Nafta.Styles;
+using BLL.Services;
+
 
 namespace Nafta
 {
     public partial class Login : Form, IAuthNavigator
     {
+        private Timer cleanupTimer;
+
+
         public Login()
         {
             InitializeComponent();
+            StartCleanupTimer();
             CueBanner.Set(EmailLoginText, "Email");
             CueBanner.Set(PasswordLoginText, "Password");
         }
+
+        private void StartCleanupTimer()
+        {
+            cleanupTimer = new Timer();
+            cleanupTimer.Interval = 120000; // 10 minutos = 600,000 ms
+            cleanupTimer.Tick += CleanupTimer_Tick;
+            cleanupTimer.Start();
+        }
+
+        private void CleanupTimer_Tick(object sender, EventArgs e)
+        {
+            var cleanupService = new UserCleanupService();
+            int removed = cleanupService.DeleteUnverifiedUsers(TimeSpan.FromMinutes(10));
+
+            if (removed > 0)
+            {
+                Console.WriteLine($"🧹 Se eliminaron {removed} usuarios no verificados.");
+            }
+        }
+
 
         public void ShowLogin() => this.Show();
 
@@ -31,12 +57,12 @@ namespace Nafta
 
         private void labelRegister_Click(object sender, EventArgs e)
         {
-            var Register = new FormRegister(this)
+            var register = new FormRegister(this)
             {
-                Owner = this,
+                Owner = this
             };
 
-            Register.Show();
+            register.Show();
             this.Hide();
         }
 

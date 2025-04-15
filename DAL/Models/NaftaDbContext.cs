@@ -1,4 +1,4 @@
-﻿using Nafta.Models;
+﻿using DAL.Models;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -10,7 +10,7 @@ namespace DAL.Models
 {
     public class NaftaDbContext : DbContext
     {
-        public NaftaDbContext() : base("name=DefaultConnection") { }
+        public NaftaDbContext() : base("Server=DESKTOP-MUCUS81\\SQLEXPRESS01;Database=Nafta;Integrated Security=True;TrustServerCertificate=True") { }
 
         public DbSet<User> Users { get; set; }
     }
