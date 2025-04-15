@@ -9,27 +9,24 @@ namespace BLL.Services
 {
     public class UserCleanupService
     {
-        public int DeleteUnverifiedUsers(TimeSpan expirationTime)
+        public int DeleteExpiredVerifications(TimeSpan expirationTime)
         {
-            int deletedCount = 0;
-
             using (var context = new NaftaDbContext())
             {
                 DateTime threshold = DateTime.UtcNow - expirationTime;
-
-                var usersToDelete = context.Users
-                    .Where(u => !u.IsVerified && u.CreatedDate < threshold)
+                var expired = context.EmailVerifications
+                    .Where(v => !v.IsVerified && v.CreatedAt < threshold)
                     .ToList();
 
-                if (usersToDelete.Any())
+                if (expired.Any())
                 {
-                    context.Users.RemoveRange(usersToDelete);
-                    deletedCount = usersToDelete.Count;
+                    context.EmailVerifications.RemoveRange(expired);
                     context.SaveChanges();
+                    return expired.Count;
                 }
-            }
 
-            return deletedCount;
+                return 0;
+            }
         }
     }
 }

@@ -39,14 +39,9 @@ namespace DAL.Models
         [RegularExpression(@"^\+?[0-9]{7,15}$", ErrorMessage = "The phone number must be in a valid format.")]
         public string Phone { get; set; }
 
-        [NotMapped]
-        public string VerificationCode { get; set; }
-
         public DateTime CreatedDate { get; set; } = DateTime.UtcNow;
 
         public DateTime LastUpdatedDate { get; set; } = DateTime.UtcNow;
-
-        public bool IsVerified { get; set; } = false;
 
     }
 }

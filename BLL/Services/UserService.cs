@@ -2,6 +2,7 @@
 using System.Linq;
 using DAL.Models;
 using Common.Helper;
+using System.Security.Policy;
 
 namespace BLL.Services
 {
@@ -17,23 +18,29 @@ namespace BLL.Services
                     return false;
                 }
 
-                string hashedPassword = Hasher.Hash(plainPassword);
-                string verificationCode = CodeGenerator.GenerateVerificationCode();
-
                 var user = new User
                 {
                     FirstName = firstName,
                     LastName = lastName,
                     Email = email,
-                    PasswordHash = hashedPassword,
+                    PasswordHash = Hasher.Hash(plainPassword),
                     Phone = phone,
                     CreatedDate = DateTime.UtcNow,
-                    LastUpdatedDate = DateTime.UtcNow,
-                    IsVerified = false,
-                    VerificationCode = verificationCode
+                    LastUpdatedDate = DateTime.UtcNow
                 };
 
                 context.Users.Add(user);
+                context.SaveChanges();
+
+                string verificationCode = CodeGenerator.GenerateVerificationCode();
+
+                var verif = new EmailVerification
+                {
+                    Email = email,
+                    Code = verificationCode
+                };
+
+                context.EmailVerifications.Add(verif);
                 context.SaveChanges();
 
                 var emailService = new EmailService();
@@ -53,26 +60,36 @@ namespace BLL.Services
             using (var context = new NaftaDbContext())
             {
                 var user = context.Users.FirstOrDefault(u => u.Email == email);
-
                 if (user == null)
                 {
                     message = "Usuario no encontrado.";
                     return false;
                 }
 
-                if (user.IsVerified)
+                var verif = context.EmailVerifications
+                    .Where(v => v.Email == email)
+                    .OrderByDescending(v => v.CreatedAt)
+                    .FirstOrDefault();
+
+                if (verif == null)
+                {
+                    message = "No se encontró solicitud de verificación.";
+                    return false;
+                }
+
+                if (verif.IsVerified)
                 {
                     message = "Este correo ya fue verificado.";
                     return false;
                 }
 
-                if (user.VerificationCode != inputCode)
+                if (verif.Code != inputCode)
                 {
                     message = "Código incorrecto.";
                     return false;
                 }
 
-                user.IsVerified = true;
+                verif.IsVerified = true;
                 context.SaveChanges();
 
                 message = "¡Correo verificado correctamente!";
